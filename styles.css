@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(4, 4, 142);
+  color: #fff;
+  font-family: cursive;
+}
+main {
+  display: flex;
+}
+p {
+  text-align: center;
+}
+.rect {
+  width: 200px;
+  height: 100px;
+  border: solid #fff 1px;
+  margin: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+@media (width <= 530px) {
+  main {
+    flex-direction: column;
+  }
+  .side {
+    margin-top: 1.5rem;
+  }
+}
